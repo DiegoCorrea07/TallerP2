@@ -4,26 +4,122 @@
              x:Class="TallerP2.AbsoluteLayout"
              Title="AbsoluteLayout">
     <AbsoluteLayout>
-        <BoxView Color="Blue"
-                 AbsoluteLayout.LayoutBounds="0.5,0,100,25"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" />
-        <BoxView Color="Green"
-                 AbsoluteLayout.LayoutBounds="0,0.5,25,100"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" />
-        <BoxView Color="Red"
-                 AbsoluteLayout.LayoutBounds="1,0.5,25,100"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" />
-        <BoxView Color="Black"
-                 AbsoluteLayout.LayoutBounds="0.5,1,100,25"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" />
-        <Label Text="Centered text"
-               AbsoluteLayout.LayoutBounds="0.5,0.5,110,25"
-               AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <!-- Scrollable content -->
+            <StackLayout>
+                <Label Text="Mitad del Mundo"
+                       FontSize="Large"
+                       TextColor="Blue"
+                       FontFamily="Arial"
+                       FontAttributes="Bold"
+                       Margin="20"
+                       HorizontalOptions="Center"/>
+                <Image Source="mitad.jpg"
+                       HeightRequest="300"
+                       Margin="20"/>
+                <Label Text="La Mitad del Mundo es un monumento y atracción turística ubicada en Ecuador. 
+                             Marca el lugar donde se cree que pasa la línea ecuatorial que divide el hemisferio norte 
+                             del hemisferio sur. El complejo incluye un museo que muestra la historia de las culturas 
+                             indígenas de Ecuador, así como experimentos y demostraciones científicas relacionadas 
+                             con la posición geográfica única del sitio. Es un destino popular para visitantes que 
+                             quieren pararse con un pie en cada hemisferio."
+                       
+                       FontSize="Medium"
+                       TextColor="DarkBlue"
+                       Margin="60"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
 
-        <Button Text="GRID"
-                    BackgroundColor="GreenYellow"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Center"
-                    Clicked="OnButtonClicked"/>
+                <Label Text="Machu Picchu"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    FontFamily="Arial"
+                    FontAttributes="Bold"
+                    Margin="60"
+                    HorizontalOptions="Center"/>
+                            <Image Source="machu.webp"
+                    HeightRequest="300"
+                    Margin="20"/>
+                <Label Text="Machu Picchu es una antigua ciudadela inca situada en la región montañosa de los Andes en Perú. 
+                       Construida en el siglo XV bajo el gobierno del emperador Pachacútec, es famosa por su impresionante arquitectura
+                       de piedra que encaja perfectamente sin el uso de mortero. El sitio incluye templos, terrazas y plazas, todo ello 
+                       estratégicamente ubicado a unos 2,430 metros sobre el nivel del mar, ofreciendo vistas espectaculares del valle 
+                       del río Urubamba. Machu Picchu es considerado un testimonio de la ingeniería y habilidad arquitectónica inca y 
+                       es uno de los destinos turísticos más importantes del mundo, reconocido como Patrimonio de la Humanidad por la 
+                       UNESCO y una de las Nuevas Siete Maravillas del Mundo."
+                    FontSize="Medium"
+                    TextColor="DarkBlue"
+                    Margin="60"
+                    HorizontalTextAlignment="Center"/>
+                <Label Text="La piedra de Peñol de Guatapé"
+                    FontSize="Large"
+                    TextColor="Blue"
+                    FontFamily="Arial"
+                    FontAttributes="Bold"
+                    Margin="20"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+                <Image Source="col.jpg"
+                    HeightRequest="300"
+                    Margin="20"/>
+                <Label Text="La Piedra de Peñol, también conocida como la Piedra de Guatapé, es un imponente monolito de granito situado
+                       en el municipio de Guatapé, en el departamento de Antioquia, Colombia. Esta formación rocosa, que se eleva aproximadament
+                       e 220 metros sobre su base, es un destino turístico popular debido a las impresionantes vistas panorámicas que ofrece desde su cima,
+                       a la que se accede por una escalera de 740 escalones construida en una grieta natural. La piedra tiene una importancia cultural y geológica,
+                       y está rodeada por el embalse de Guatapé, lo que añade un atractivo adicional a la visita. En la cima, los visitantes pueden disfrutar de 
+                       vistas de 360 grados del paisaje circundante, que incluye el embalse y las montañas verdes, convirtiéndola en una experiencia inolvidable."
+      
+                    FontSize="Medium"
+                    TextColor="DarkBlue"
+                    Margin="60"
+                    HorizontalTextAlignment="Center"/>
+
+                <Grid HeightRequest="200" BackgroundColor="LightGray">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Previous Versions"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Text="Blog"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Text="Contribute"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="3" Text="Privacy"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="4" Text="Terms of Use"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="5" Text="Trademarks"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                    <Label Grid.Row="6" Text="© CreateDC 2024"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Center"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Go to GridLayout"
+                Clicked="OnButtonClicked"
+                BackgroundColor="Purple"
+                TextColor="White"
+                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

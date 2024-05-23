@@ -57,8 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\col.jpg" />
 	  <None Remove="Resources\Images\colombia.jpg" />
 	  <None Remove="Resources\Images\ecuador.png" />
+	  <None Remove="Resources\Images\machu.webp" />
 	  <None Remove="Resources\Images\peru.jpg" />
 	</ItemGroup>
 
