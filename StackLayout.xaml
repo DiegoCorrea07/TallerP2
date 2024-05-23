@@ -5,20 +5,21 @@
              Title="StackLayout">
     <StackLayout Margin="20"
                  Orientation="Vertical"
-                 HorizontalOptions="Center">
+                 HorizontalOptions="Center"
+                 Spacing="30">
         <BoxView Color="Green"
                  WidthRequest="40"/>
-        <Label Text="Etiqueta 1" FontSize="Large"/>
+        <Label Text="Quito - Ecuador" FontSize="Large" TextColor="Yellow"/>
         <BoxView Color="Orange"
                  WidthRequest="40" />
-        <Label Text="Etiqueta 2" FontSize="Medium"/>
+        <Label Text="Lima - Perú" FontSize="Medium" TextColor="Red"/>
         <BoxView Color="Purple"
                  WidthRequest="40" />
-        <Label Text="Etiqueta 3" FontSize="Small"/>
+        <Label Text="Bogotá - Colombia" FontSize="Small" TextColor="Blue"/>
+
         <Button
             x:Name="CounterBtn"
             Text="Flex Layout" 
-            SemanticProperties.Hint="Counts the number of times you click"
             Clicked="OnCounterClicked"
             HorizontalOptions="Fill" />
 

@@ -3,48 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerP2.FlexLayout"
              Title="FlexLayout">
-    
-    <FlexLayout Direction="Column">
-
-        <!-- Header -->
-        <Label Text="HEADER"
-               FontSize="18"
-               BackgroundColor="Aqua"
-               HorizontalTextAlignment="Center" />
-
-        <!-- Body -->
-        <FlexLayout FlexLayout.Grow="1">
-
-            <!-- Content -->
-            <Label Text="CONTENT"
-                   FontSize="18"
-                   BackgroundColor="Gray"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   FlexLayout.Grow="1" />
-
-            <!-- Navigation items-->
-            <BoxView FlexLayout.Basis="50"
-                     FlexLayout.Order="-1"
-                     Color="Blue" />
-
-            <!-- Aside items -->
-            <BoxView FlexLayout.Basis="50"
-                     Color="Green" />
-
-            <Button Text="AbsoluteLayout"
-                    BackgroundColor="Orange"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Center"
-                    Clicked="OnButtonClicked"/>
-
-
+    <ScrollView>
+        <FlexLayout Direction="Column" AlignItems="Start" Padding="10">
+            <!-- First Item -->
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="ecuador.png"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Quito - Ecuador"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
+            <!-- Second Item -->
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="peru.jpg"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Lima - Perú"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
+            <!-- Third Item -->
+            <StackLayout Orientation="Horizontal" Margin="5">
+                <Image Source="colombia.jpg"
+                       WidthRequest="50"
+                       HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnImageTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Bogotá - Colombia"
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0" />
+            </StackLayout>
         </FlexLayout>
-
-        <!-- Footer -->
-        <Label Text="FOOTER"
-               FontSize="18"
-               BackgroundColor="Pink"
-               HorizontalTextAlignment="Center" />
-    </FlexLayout>
+    </ScrollView>
 </ContentPage>
