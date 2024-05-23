@@ -117,7 +117,6 @@
         </ScrollView>
         <Button Text="Go to GridLayout"
                 Clicked="OnButtonClicked"
-                BackgroundColor="Purple"
                 TextColor="White"
                 AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
                 AbsoluteLayout.LayoutFlags="PositionProportional"/>

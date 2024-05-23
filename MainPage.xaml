@@ -41,7 +41,6 @@
         <Button Grid.Row="1"
                 Grid.Column="2"
                 Text="StackLayout"
-                BackgroundColor="DarkRed"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="Center"
                 Clicked="OnButtonClicked"/>
